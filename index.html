@@ -4,92 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cabrobó do Sul - Eventos Culturais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <body>
- <header>
-        <img src="img/banner.png" alt="Banner da Prefeitura de Cabrobó do Sul" class="banner-img"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="ativo">Início</a></li>
-                <li><a href="eventos.html" >Eventos</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-            </ul>
-        </nav>
+    <header class="bg-primary text-white">
+        <div class="container">
+            <a href="index.html"><img src="img/banner.png" alt="Banner da Prefeitura de Cabrobó do Sul" class="img-fluid"></a>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Início</a></li>
+                            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastro</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
 
     <main>
-         <section class="hero">
-        
-            <video autoplay loop muted>
+        <section class="hero">
+            <video autoplay loop muted class="video-bg">
                 <source src="vid/vid.mp4" type="video/mp4">
             </video>
-
-       
-            <h2>Eventos da nossa cidade</h2>
-            <p>Descubra shows, feiras e atividades culturais em Cabrobó do Sul</p>
-            <a href="eventos.html" class="botao-principal">Ver todos os eventos</a>
+            <div class="container">
+                <h1 class="display-4">Eventos da nossa cidade</h1>
+                <p class="lead">Descubra shows, feiras e atividades culturais em Cabrobó do Sul</p>
+                <a href="eventos.html" class="btn btn-light btn-lg">Ver todos os eventos</a>
+            </div>
         </section>
 
-        <section class="eventos-destaque">
+        <section class="py-5">
             <div class="container">
-                <h2>Próximos Eventos</h2>
-                <div class="container-eventos">
-                    <!-- Eventos serão carregados dinamicamente aqui -->
-                    <div class="evento">
-                        <img src="https://t4.ftcdn.net/jpg/04/22/56/27/240_F_422562769_Mzb86IyuCfloSl3S5pDtkUaSb3IpXm9j.jpg" alt="Feira de Artesanato">
-                        <h3>Feira de Artesanato Local</h3>
-                        <p class="data">15/12/2025</p>
-                        <p class="local">Praça Central</p>
-                        <p class="descricao">Exposição e venda de produtos artesanais produzidos por moradores da cidade.</p>
-                        <a href="eventos.html#evento1">Saiba mais</a>
+                <h2 class="text-primary text-center mb-4">Próximos Eventos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="https://t4.ftcdn.net/jpg/04/22/56/27/240_F_422562769_Mzb86IyuCfloSl3S5pDtkUaSb3IpXm9j.jpg" class="card-img-top" alt="Feira de Artesanato">
+                            <div class="card-body">
+                                <h5 class="card-title">Feira de Artesanato Local</h5>
+                                <p class="card-text text-muted">15/12/2025 - Praça Central</p>
+                                <p class="card-text">Exposição e venda de produtos artesanais produzidos por moradores da cidade.</p>
+                                <a href="eventos.html#evento1" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="evento">
-                        <img src="https://t3.ftcdn.net/jpg/01/48/33/68/240_F_148336880_99AmIhrafaP6ftzUJRE32yez6XYSZejZ.jpg" alt="Show Musical">
-                        <h3>Show Musical - Banda Municipal</h3>
-                        <p class="data">20/12/2025</p>
-                        <p class="local">Teatro Municipal</p>
-                        <p class="descricao">Apresentação da Banda Municipal de Cabrobó do Sul com repertório especial de fim de ano.</p>
-                        <a href="eventos.html#evento2">Saiba mais</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="https://t3.ftcdn.net/jpg/01/48/33/68/240_F_148336880_99AmIhrafaP6ftzUJRE32yez6XYSZejZ.jpg" class="card-img-top" alt="Show Musical">
+                            <div class="card-body">
+                                <h5 class="card-title">Show Musical - Banda Municipal</h5>
+                                <p class="card-text text-muted">20/12/2025 - Teatro Municipal</p>
+                                <p class="card-text">Apresentação da Banda Municipal com repertório especial de fim de ano.</p>
+                                <a href="eventos.html#evento2" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="evento">
-                        <img src="https://t3.ftcdn.net/jpg/02/85/93/38/240_F_285933854_KNtxwqb1lLD8JklMi7oJf9p8y7QAZIQk.jpg" alt="Festival Gastronômico">
-                        <h3>Festival Gastronômico</h3>
-                        <p class="data">27/12/2025</p>
-                        <p class="local">Parque Municipal</p>
-                        <p class="descricao">Degustação de pratos típicos da região com a participação de restaurantes locais.</p>
-                        <a href="eventos.html#evento3">Saiba mais</a>
+                    <div class="col-md-4 mb-4">
+                        <div class="card shadow-sm">
+                            <img src="https://t3.ftcdn.net/jpg/02/85/93/38/240_F_285933854_KNtxwqb1lLD8JklMi7oJf9p8y7QAZIQk.jpg" class="card-img-top" alt="Festival Gastronômico">
+                            <div class="card-body">
+                                <h5 class="card-title">Festival Gastronômico</h5>
+                                <p class="card-text text-muted">27/12/2025 - Parque Municipal</p>
+                                <p class="card-text">Degustação de pratos típicos da região com a participação de restaurantes locais.</p>
+                                <a href="eventos.html#evento3" class="btn btn-primary">Saiba mais</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="sobre">
-            <h2>Sobre o Portal de Eventos</h2>
-            <p>Este portal foi desenvolvido pela Prefeitura de Cabrobó do Sul para facilitar a divulgação e acesso aos eventos culturais, shows e feiras da nossa cidade. Organizadores podem se cadastrar e incluir seus eventos, enquanto os cidadãos podem consultar a programação completa de forma gratuita e simples.</p>
-            <p>Quer organizar um evento na cidade? <a href="cadastro.html">Cadastre-se aqui</a> e faça parte dessa iniciativa!</p>
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-8">
+                        <h2 class="text-primary">Sobre o Portal de Eventos</h2>
+                        <p>Este portal foi desenvolvido pela Prefeitura de Cabrobó do Sul para facilitar a divulgação e acesso aos eventos culturais, shows e feiras da nossa cidade. Organizadores podem se cadastrar e incluir seus eventos, enquanto os cidadãos podem consultar a programação completa de forma gratuita e simples.</p>
+                        <p>Quer organizar um evento na cidade? <a href="cadastro.html">Cadastre-se aqui</a> e faça parte dessa iniciativa!</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="img/banner.png" alt="Logo Prefeitura" class="img-fluid rounded-circle" style="max-width: 200px;">
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="contato">
-            <h3>Contato</h3>
-            <p>Endereço: Av. Central, 123 - Cabrobó do Sul</p>
-            <p>Telefone: (81) 3333-4444</p>
-            <p>E-mail: eventos@cabrobodosul.pref.br</p>
-        </div>
-        <div class="redes">
-            <h3>Redes Sociais</h3>
-            <p>Siga-nos para ficar por dentro de todos os eventos:</p>
-            <div class="icones">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter</a>
+    <footer class="bg-primary text-white py-4 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h3>Contato</h3>
+                    <p>Endereço: Av. Central, 123 - Cabrobó do Sul</p>
+                    <p>Telefone: (81) 3333-4444</p>
+                    <p>E-mail: eventos@cabrobodosul.pref.br</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3>Redes Sociais</h3>
+                    <p>Siga-nos para ficar por dentro de todos os eventos:</p>
+                    <div>
+                        <a href="#" class="text-white me-2">Facebook</a>
+                        <a href="#" class="text-white me-2">Instagram</a>
+                        <a href="#" class="text-white">Twitter</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <p>&copy; 2025 Prefeitura de Cabrobó do Sul. Desenvolvido por Flávio e Márcio Dev's.</p>
+                </div>
             </div>
         </div>
-        <div class="direitos">
-            <p>&copy; 2025 Prefeitura de Cabrobó do Sul. Desenvolvido por Flávio e Márcio Dev's.</p>
-        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
