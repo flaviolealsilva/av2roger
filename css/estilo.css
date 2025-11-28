@@ -1,11 +1,11 @@
 
-/* elemento que vai definir as cores principais do site */
+/* cores pricipais do site */
 :root {
     --bs-primary-rgb: 0, 51, 102;
     --bs-secondary-rgb: 255, 193, 7;
 }
 
-/* elemento deformatação da sessão prinipal do site */
+/*ajuste  e espaços da sessão prinipal do site */
 .hero {
     position: relative;
     height: 60vh;
@@ -17,7 +17,7 @@
     overflow: hidden;
 }
 
-/* formatação do vídeo de fundo da pag principal do site */
+/* formatação do vídeo de fundo do index */
 .video-bg {
     position: absolute;
     top: 50%;
@@ -30,7 +30,7 @@
     z-index: -1;
 }
 
-/* formata as imagens e deixa os cantos arredondados bem chique */
+/* formata as imagens e deixa os cantos arredondados bem chique estilo profissional */
 .card-img-top {
     height: 200px;
     object-fit: cover;

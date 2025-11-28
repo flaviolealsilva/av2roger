@@ -120,22 +120,30 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
         <script>
-            // Função simples: pega valores do formulário e mostra em um pop-up (alert)
+        
+            //espaço privato alem do site.
             (function() {
-                const form = document.getElementById('formCadastro');
-                if (!form) return;
-                form.addEventListener('submit', function(e) {
-                    
-                    const nome = form.querySelector('[name="cxnome"]').value || '';
-                    const email = form.querySelector('[name="cxemail"]').value || '';
-                    const telefone = form.querySelector('[name="cxtelefone"]').value || '';
+            // direciona pro id 'formCadastro'.
+            const form = document.getElementById('formCadastro');
+            // se não achar o form no documento, a o script para.
+            if (!form) return;
+            // ouvinhte de evento.
+            form.addEventListener('submit', function(e) {
+                
+                // busca o valor name="cxnome".
+                const nome = form.querySelector('[name="cxnome"]').value || '';
+                // busca o valor name="cxemail".
+                const email = form.querySelector('[name="cxemail"]').value || '';
+                //busca o valor name="cxtelefone".
+                const telefone = form.querySelector('[name="cxtelefone"]').value || '';
 
-                    const mensagem = `Dados do Cadastro, acho que o site vale 10!:\n\nNome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}`;
-                    alert(mensagem);
+                // Cria um string pra incluir os valores das variáveis.
+                const mensagem = `Dados do Cadastro, acho que o site vale 10!:\n\nNome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}`;
+                // Exibe a mensagem em alert.
+                alert(mensagem);
 
-                    // se quiser reenviar ao servidor depois de mostrar o pop-up, descomente a linha abaixo
-                    // form.submit();
-                });
+            
+            });
             })();
         </script>
     </body>

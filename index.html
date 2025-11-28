@@ -1,40 +1,40 @@
-<!-- Define o tipo de documento como HTML5 -->
+<!-- Tipo de Doc html -->
 <!DOCTYPE html>
-<!-- Elemento raiz do documento, define o idioma como português do Brasil -->
+<!-- define idiome ptbr -->
 <html lang="pt-BR">
-<!-- Cabeçalho do documento, contém metadados e links para folhas de estilo -->
+<!-- cabeçalho -->
 <head>
-    <!-- Define a codificação de caracteres como UTF-8 -->
+    <!--codificação como UTF-8 aula 2 eu lembro-->
     <meta charset="UTF-8">
-    <!-- Configura a viewport para garantir que a página seja responsiva em dispositivos móveis -->
+    <!-- Pra funcionar nos celular -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Título da página, exibido na aba do navegador -->
+    <!-- Título da pag na aba do browser -->
     <title>Cabrobó do Sul - Eventos Culturais</title>
-    <!-- Link para a folha de estilo do Bootstrap via CDN -->
+    <!-- Link do bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Link para a folha de estilo personalizada -->
+    <!-- Link proCSS -->
     <link rel="stylesheet" href="css/estilo.css">
 </head>
-<!-- Corpo do documento, contém todo o conteúdo visível da página -->
+<!-- Cordo do doc -->
 <body>
-    <!-- Seção do cabeçalho da página -->
+    <!-- cabeçalho da pag -->
     <header class="bg-primary text-white">
-        <!-- Link no banner que leva para a página inicial -->
+        <!-- link p/ index -->
         <a href="index.html">
-            <!-- Imagem do banner, fluida e com 100% da largura -->
+            <!-- img fo banner -->
             <img src="img/banner.png" class="img-fluid w-100">
         </a>
-        <!-- Container para alinhar o conteúdo do cabeçalho -->
+        <!-- alinhar o cabeçalho -->
         <div class="container">
-            <!-- Barra de navegação -->
+            <!-- barra de navegação -->
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <!-- Botão para expandir/recolher o menu em telas pequenas (hambúrguer) -->
+                <!-- Botão pra expandir se tiver usando cel -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <!-- Conteúdo da barra de navegação que será recolhido em telas menores -->
+                <!-- diminiu as tela da barra de nav -->
                 <div class="collapse navbar-collapse" id="menu">
-                    <!-- Lista de links de navegação, alinhada à direita -->
+                    <!-- liks do site -->
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
                         <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
@@ -45,33 +45,33 @@
         </div>
     </header>
 
-    <!-- Conteúdo principal da página -->
+    <!-- conteudo principal -->
     <main>
-        <!-- Seção "hero" com vídeo de fundo -->
+        <!-- sessão da parte do video -->
         <section class="hero">
-            <!-- Vídeo de fundo com autoplay, loop e sem som -->
+            <!-- video com autoplay -->
             <video autoplay loop muted class="video-bg">
                 <source src="vid/vid.mp4" type="video/mp4">
             </video>
-            <!-- Container para o texto sobreposto ao vídeo -->
+            <!-- texto emcima do vid -->
             <div class="container">
                 <h1 class="display-4">Eventos da nossa cidade</h1>
                 <p class="lead">Descubra shows, feiras e atividades culturais em Cabrobó do Sul</p>
-                <!-- Botão de chamada para ação -->
+                <!-- botão -->
                 <a href="eventos.html" class="btn btn-light btn-lg">Ver todos os eventos</a>
             </div>
         </section>
 
-        <!-- Seção de "Próximos Eventos" -->
+        <!-- sessão os eventos -->
         <section class="py-5">
             <div class="container">
-                <!-- Título da seção -->
+                <!-- titulo da sessão -->
                 <h2 class="text-primary text-center mb-4">Próximos Eventos</h2>
-                <!-- Linha para organizar os cards de eventos -->
+                <!-- div pra organizar os eventos -->
                 <div class="row">
                     <!-- Coluna para o primeiro evento -->
                     <div class="col-md-4 mb-4">
-                        <!-- Card do evento -->
+                        <!-- card do evento -->
                         <div class="card">
                             <img src="https://t4.ftcdn.net/jpg/04/22/56/27/240_F_422562769_Mzb86IyuCfloSl3S5pDtkUaSb3IpXm9j.jpg" class="card-img-top">
                             <div class="card-body">
@@ -82,9 +82,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Coluna para o segundo evento -->
+                    <!-- col do segundo evento -->
                     <div class="col-md-4 mb-4">
-                        <!-- Card do evento -->
+                        <!-- evento 2 -->
                         <div class="card">
                             <img src="https://t3.ftcdn.net/jpg/01/48/33/68/240_F_148336880_99AmIhrafaP6ftzUJRE32yez6XYSZejZ.jpg" class="card-img-top">
                             <div class="card-body">
@@ -95,9 +95,9 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Coluna para o terceiro evento -->
+                    <!-- 3 evento -->
                     <div class="col-md-4 mb-4">
-                        <!-- Card do evento -->
+                        <!-- card do 3 evento -->
                         <div class="card">
                             <img src="https://t3.ftcdn.net/jpg/02/85/93/38/240_F_285933854_KNtxwqb1lLD8JklMi7oJf9p8y7QAZIQk.jpg" class="card-img-top">
                             <div class="card-body">
@@ -112,18 +112,18 @@
             </div>
         </section>
 
-        <!-- Seção "Sobre o Portal" -->
+        <!-- sessão sobre o portal -->
         <section class="bg-light py-5">
             <div class="container">
-                <!-- Linha para alinhar texto e imagem -->
+                <!-- linha pra alinhar texto e imagem -->
                 <div class="row align-items-center">
-                    <!-- Coluna para o texto descritivo -->
+                    <!-- coluna pro texto descritivo -->
                     <div class="col-md-8">
                         <h2 class="text-primary">Sobre o Portal de Eventos</h2>
                         <p>Este portal foi desenvolvido pela Prefeitura de Cabrobó do Sul para facilitar a divulgação e acesso aos eventos culturais, shows e feiras da nossa cidade. Organizadores podem se cadastrar e incluir seus eventos, enquanto os cidadãos podem consultar a programação completa de forma gratuita e simples.</p>
                         <p>Quer organizar um evento na cidade? <a href="cadastro.html">Cadastre-se aqui</a> e faça parte dessa iniciativa!</p>
                     </div>
-                    <!-- Coluna para a imagem -->
+                    <!--coluna para a imagem -->
                     <div class="col-md-4 text-center">
                         <img src="img/banner00.png" class="img-fluid rounded-circle" style="max-width: 400px;">
                     </div>
@@ -132,19 +132,19 @@
         </section>
     </main>
 
-    <!-- Rodapé da página -->
+    <!-- rodapé da página -->
     <footer class="bg-primary text-white py-4 mt-auto">
         <div class="container">
-            <!-- Linha para organizar o conteúdo do rodapé -->
+            <!-- linha para organizar o conteúdo do rodapé -->
             <div class="row">
-                <!-- Coluna de Contato -->
+                <!-- coluna de contato -->
                 <div class="col-md-4 mb-3">
                     <h3>Contato</h3>
                     <p>Endereço: Av. Central, 123 - Cabrobó do Sul</p>
                     <p>Telefone: (81) 3333-4444</p>
                     <p>E-mail: eventos@cabrobodosul.pref.br</p>
                 </div>
-                <!-- Coluna de Redes Sociais -->
+                <!--coluna de redes sociais "saudades do orkut"-->
                 <div class="col-md-4 mb-3">
                     <h3>Redes Sociais</h3>
                     <p>Siga-nos para ficar por dentro de todos os eventos:</p>
@@ -154,7 +154,7 @@
                         <a href="#" class="text-white">mIRC</a>
                     </div>
                 </div>
-                <!-- Coluna de Copyright -->
+                <!-- coluna de copyright -->
                 <div class="col-md-4">
                     <p>&copy; 2025 Prefeitura de Cabrobó do Sul. Desenvolvido por Flávio e Márcio Dev's.</p>
                 </div>
@@ -162,7 +162,7 @@
         </div>
     </footer>
 
-    <!-- Script do Bootstrap para funcionalidades como o menu responsivo -->
+    <!-- bootstrap do script dos efeitos pro menu responsivo -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
